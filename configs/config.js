@@ -1,5 +1,5 @@
-import dotenv from 'dotenv';
-const pathToEnvFile = './env/.env';
+import dotenv from "dotenv";
+const pathToEnvFile = "./env/.env";
 dotenv.config({ path: pathToEnvFile });
 
 export const db_config = {

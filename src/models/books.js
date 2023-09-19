@@ -1,10 +1,10 @@
-import { DataTypes } from 'sequelize';
-import { SequelizeFactory } from '../drivers/SequelizeFactory.js';
+import { DataTypes } from "sequelize";
+import { SequelizeFactory } from "../drivers/SequelizeFactory.js";
 
 const sequelize = SequelizeFactory.createConnection(process.env.NODE_ENV);
 
 export const Books = sequelize.define(
-  'Books',
+  "Books",
   {
     title: {
       type: DataTypes.STRING,
@@ -18,6 +18,6 @@ export const Books = sequelize.define(
   },
   {
     sequelize,
-    modelName: 'Books',
+    modelName: "Books",
   }
 );

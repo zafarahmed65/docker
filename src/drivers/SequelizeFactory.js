@@ -1,5 +1,5 @@
-import { db_config } from '../../configs/config.js';
-import { Sequelize } from 'sequelize';
+import { db_config } from "../../configs/config.js";
+import { Sequelize } from "sequelize";
 
 export class SequelizeFactory {
   static createConnection(server) {
